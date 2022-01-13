@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/resolution414px.css">
+    <link rel="stylesheet" href="./assets/css/resolution375px.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <main>
+
+        <!-- APP LISTA DE TAREFAS -->
+        <section>
+            <!-- CABEÇALHO DO APP-->
+            <header>
+                <h1>Lista de Tarefas</h1>
+                <p class="subtitulo">Acelere sua entrada no mercado de programação.</p>
+            </header>
+
+            <!-- ÁREA DE FORMULÁRIO / ADICIONA NOVA TAREFA-->
+            <div class="formularioTarefa">
+                <label for="inputAdicionarTarefa">Adicionar uma nova tarefa</label>
+                <input type="text" id="inputAdicionarTarefa" placeholder="Adicionar Nova Tarefa">
+                <button type="submit">Adicionar</button>
+            </div>
+
+            <div class="addTarefas">
+                <p>Adicione Uma Tarefa</p>
+                
+                <figure>
+                    <img class="imgAdd" src="./assets/img/lista.png" alt="Imagem Adicione Tafefas">
+                    <figcaption>Imagem com Lista de Tarefas Completas</figcaption>
+                </figure>
+            </div>
+
+            <!-- ÁREA DE LISTA DE TAREFAS -->
+            <div class="listaTarefas">
+                <ul>
+                    
+                </ul>
+            </div>
+
+            <!-- MODO NOTURNO -->
+            <div class="modoNoturno">
+                <label for="inputModoNoturno">Modo Noturno</label>
+                <label class="switch"><input id="inputModoClean" type="checkbox" />
+                <div></div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

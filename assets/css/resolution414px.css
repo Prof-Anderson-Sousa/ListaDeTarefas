@@ -1,0 +1,27 @@
+@media only screen and (max-width: 414px) {
+  section {
+    width: 350px;
+  }
+
+  header h1 {
+    font-size: 31px;
+    text-align: center;
+  }
+
+  header p {
+    padding: 10px 0px;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+  }
+
+  .formularioTarefa {
+    padding: 40px 40px 10px 38px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .modoNoturno {
+    padding-right: 40px;
+  }
+}

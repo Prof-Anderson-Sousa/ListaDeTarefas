@@ -1,0 +1,213 @@
+/* Fonte do APP */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section.Noturno {
+  background-color: #363636;
+  box-shadow: -20px -20px 0px 0px #fff;
+}
+
+body.Noturno {
+  background-color: #000;
+}
+
+.subtitulo.Noturno {
+  color: #a7a6a6;
+}
+
+/* APP LISTA DE TAREFAS */
+section {
+  font-family: "Quicksand", sans-serif;
+  background-color: #2585da;
+  width: 500px;
+  color: #fff;
+  margin: 45px 0px;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+}
+
+/* CABEÇALHO DO APP */
+header {
+  padding: 50px 60px 0px 60px;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header p {
+  padding: 10px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+}
+
+/* ÁREA DE FORMULÁRIO / ADICIONA NOVA TAREFA */
+.formularioTarefa {
+  padding: 40px 60px 10px 60px;
+  display: flex;
+  gap: 10px;
+}
+
+.formularioTarefa label {
+  display: none;
+}
+
+.formularioTarefa input {
+  width: 350px;
+  padding: 20px 20px;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.formularioTarefa button {
+  text-transform: uppercase;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+}
+
+.formularioTarefa button:hover {
+  background-color: #fff;
+  color: #2585da;
+  transition: all ease 300ms;
+}
+
+.formularioTarefa .textNoturno:hover {
+  color: #000;
+  font-weight: 600;
+}
+/* ÁREA ADD TAREFAS */
+.addTarefas p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+figure figcaption {
+  display: none;
+}
+
+.addTarefas .imgAdd {
+  width: 200px;
+}
+
+/* ÁREA DE LISTA DE TAREFAS */
+.listaTarefas {
+}
+
+.listaTarefas ul {
+}
+
+.listaTarefas li {
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: rgb(255 255 255 / 37%);
+}
+
+.listaTarefas h2 {
+}
+
+.listaTarefas li.tarefaFinalizada h2 {
+  text-decoration: line-through;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.listaTarefas div {
+}
+
+.listaTarefas button {
+  font-family: "Quicksand", sans-serif;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.listaTarefas .botaoFinalizarTarefa {
+  background-image: url(../img/square.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+.listaTarefas li.tarefaFinalizada .botaoFinalizarTarefa {
+  background-image: url(../img/check.svg);
+}
+
+.listaTarefas .itemAdd {
+  display: flex;
+  align-items: center;
+}
+
+.listaTarefas .trash {
+  width: 25px;
+}
+
+/* MODO NOTURNO */
+.modoNoturno {
+  padding: 15px 60px 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modoNoturno label {
+}
+
+.modoNoturno input {
+}
+
+/* TOGGLE */
+.switch input {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: #bdb9a6;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.switch input:checked + div {
+  cursor: pointer;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
